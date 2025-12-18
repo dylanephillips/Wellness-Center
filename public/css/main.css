@@ -1,0 +1,572 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.4em; /* Adjusted for a smaller header */
+}
+
+/* Header Subtitle Styling */
+header p {
+    font-size: 1em;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Main Section Styling */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Form Field Container */
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Heading for Form */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Ensures it’s properly aligned */
+}
+
+/* Form Field Styling */
+label {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: #7F8C8D;
+    display: block;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 0.8em;
+    border: 2px solid #BDC3C7;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    padding: 0.8em 1.5em;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+/* Error Message Styling */
+p[style*="color: red"] {
+    color: red;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: auto;
+    font-size: 1em;
+    color: #7F8C8D;
+    padding: 20px;
+    background-color: #4A90E2;
+    color: white;
+}
+
+/* Admin Menu Page Specific Styles */
+
+/* Admin Menu Header */
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Admin Menu Section */
+.menu-section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Ensures it’s properly aligned */
+}
+
+.admin-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-menu .menu-item {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.admin-menu .menu-item:hover {
+    background-color: #357ABD;
+}
+
+/* Login Status Styling */
+.login-status {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.logout-button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    font-size: 0.95em;
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #C0392B;
+}
+
+ 
+/* Footer Styling for Admin Menu Page */
+footer {
+    text-align: center;
+    font-size: 1.1em;
+    color: #7F8C8D;
+    padding: 20px;
+    background-color: #4A90E2;
+    color: white;
+    margin-top: auto;
+}
+
+/* Admin/User Field Toggle */
+#admin-fields, #user-fields {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .menu-section h2 {
+        font-size: 1.6em;
+    }
+
+    .admin-menu .menu-item {
+        font-size: 1em;
+    }
+
+    .logout-button {
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    main {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Create Service Page Specific Styles */
+.create-service-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-service-form fieldset {
+    border: none;
+    margin-bottom: 25px;
+}
+
+.create-service-form legend {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+.create-service-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #34495E;
+}
+
+.create-service-form input[type="text"],
+.create-service-form input[type="number"],
+.create-service-form input[type="datetime-local"],
+.create-service-form textarea,
+.create-service-form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #BDC3C7;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.create-service-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.create-service-form button {
+    padding: 12px 20px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-service-form button:hover {
+    background-color: #357ABD;
+}
+
+/* Success and Error Message Styling */
+.success, .error {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #DFF2BF;
+    color: #4F8A10;
+}
+
+.error {
+    background-color: #FFBABA;
+    color: #D8000C;
+}
+
+/* Manage services page */
+.admin-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    background-color: #f7f9fb;
+    color: #333;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.success-msg {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.error-msg {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.services-table th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.services-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.services-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.services-table tr:hover {
+    background-color: #e9f7fe;
+}
+
+.input-field {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.save-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+    color: white;
+    margin-left: 5px;
+}
+
+.action-link {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-link.delete {
+    color: #c0392b;
+}
+
+.edit-row td:last-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* General Styles for teacher searcg */
+.header {
+    background-color: #4A90E2;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    color: white;
+    margin: 0;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.search-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form Styling */
+.search-form {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* New Search Button */
+.new-search-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.new-search-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Table Styling */
+.teacher-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header {
+    padding: 12px 15px;
+    background-color: #f2f2f2;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-cell {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.teacher-table th,
+.teacher-table td {
+    text-align: left;
+}
+
+/* No Results */
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4A90E2;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.button-secondary-button {
+    padding: 0.8em 1.5em;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
